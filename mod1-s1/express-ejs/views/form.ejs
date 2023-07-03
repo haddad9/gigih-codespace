@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Password Form</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+
+    .form-container {
+      text-align: center;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Email Password Form</h2>
+    <form onsubmit=validate()>
+      <input id="email-input" type="text" placeholder="Email" required>
+      <br>
+      <input id="pw-input" type="password" placeholder="Password" required>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+<script>
+  function validate() {
+    
+    let pw = document.getElementById("pw-input").value
+    let email = document.getElementById("email-input").value
+    
+    
+  }
+</script>
+</html>
