@@ -10,6 +10,8 @@ function optionalChaining() {
 }
 
 optionalChaining()
+optionalChaining2()
+optionalChaining3()
 
 
 // 2. DESTRUCTURING
@@ -29,11 +31,12 @@ const students=[
 ];
 
 
-// console.log(averageAge2(students))
+console.log(averageAge2(students))
 
 const obj = {name: "Haddad", age:17};
+
 const {name:nama ,age:umur} = obj
-// console.log(nama, umur)
+console.log(nama, umur)
 
 
 
@@ -56,5 +59,8 @@ students.forEach((student) => {
 const name2 = "Miya"
 const age2 = 20
 const newStudent2 = {name,age}
-newStudents = [  ...students, newStudent2 ]
-console.log(newStudent2)
+newStudents = [  ...students, newStudent2 ]    
+console.log(newStudents)
+
+// folder 1 = CV, resume
+//folder 2 = ...folder1, ijazah => CV, resume, Ijazah
